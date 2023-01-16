@@ -2,6 +2,7 @@ package Arrays;
 
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Path;
 import java.util.*;
 
 class Sort {
@@ -78,6 +79,28 @@ class Sort {
      }
         System.out.println(Arrays.toString(arr));
     }
+    public static void isCoouredmorethanHalfTime(int[] arr ,int value)
+    {
+        int count=0;
+        for (int j : arr) {
+            if (j == value) {
+                count++;
+            }
+        }
+        if(count > (arr.length-1)/2)
+        {
+            System.out.println("true");
+        }else {
+            System.out.println("false");
+        }
+    }
+    public static void incrementvalue(int[] arr)
+    {
+
+    }
+
+
+
 
 }
 public class StringToBYte {
@@ -106,14 +129,15 @@ public class StringToBYte {
         Sort.sort("Premkumar");
         ArrayList<Integer>
                 arrlist = new ArrayList<Integer>();
-        int arr[] = new int[] { 1,1,1,1,1,0,0,1,0,1,0, 1, 0, 1, 1, 1 };
+        int arr[] = new int[] { 1,1,1,1,1,0,0,1,0,1,0, 1, 0, 1, 1, 1 ,0};
+        int arr1[] = {1,1,2,3,3,3,3,3,3,3,3,3,4,5,6,6,7};
         // Populating arrlist1
         arrlist.add(1);
         arrlist.add(4);
         arrlist.add(9);
         arrlist.add(25);
         arrlist.add(36);
-        Sort.segregation0sAnd1s(arr);
+        Sort.isCoouredmorethanHalfTime(arr1,3);
     }
     }
 
